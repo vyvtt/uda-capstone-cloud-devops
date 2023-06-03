@@ -21,8 +21,6 @@ Parameters:
 
 Resources:
     ## VPC ##
-
-    #VPC for Udagram App
     VPC:
         Type: AWS::EC2::VPC
         Properties:
@@ -121,6 +119,7 @@ Resources:
         Properties:
             UserData:
                 Fn::Base64: !Sub |
+                    #!/bin/bash
                     # Install JDK
                     apt-get update -y
                     apt-get install -y default-jre
@@ -168,7 +167,7 @@ Resources:
 
     ## Auto Scaling Group ##
 
-    # Auto scaling group for Udagram App
+    # Auto scaling group
     JenkinsGroup:
         Type: AWS::AutoScaling::AutoScalingGroup
         Properties:
