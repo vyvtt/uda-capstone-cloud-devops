@@ -16,7 +16,8 @@ spec:
         spec:
             containers:
                 - name: green
-                  image: thuyvyv2tv/udacity-capstone-pj:v1.0.0
+                  image: thuyvyv2tv/udacity-capstone-pj:latest
+                  imagePullPolicy: Always
                   ports:
                       - name: http-server
                         containerPort: 80
