@@ -83,6 +83,7 @@ You can now visit the page at `http://a327eabbd830e431988d5537166b3ac5-129755320
 
 ![Screenshot](./screenshots/result-8-application.png)
 
+![Gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGU0MDFhOWQ5NjNkYjJkZDU3NTMwZTk0NWE0NGVhM2NmZjg0YThjZiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/G8sdIQ3Tcqv4WAAXaG/giphy.gif)
 ### Others
 - Docker image can be found here: [thuyvyv2tv/udacity-capstone-cloud general | Docker Hub](https://hub.docker.com/repository/docker/thuyvyv2tv/udacity-capstone-cloud/general)
 - Web template is based on: [Apollo Free Website Template | Free CSS Templates | Free CSS (free-css.com)](https://www.free-css.com/free-css-templates/page289/apollo)
