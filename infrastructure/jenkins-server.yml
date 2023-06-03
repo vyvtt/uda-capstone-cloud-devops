@@ -129,6 +129,7 @@ Resources:
                     # Install Jenkins
                     wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | apt-key add -
                     sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+                    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 5BA31D57EF5975CA
                     apt-get update -y
                     apt-get install -y jenkins
                     systemctl start jenkins
@@ -158,7 +159,7 @@ Resources:
                     # Add jenkins user tp docker group
                     usermod -aG docker jenkins
                     # Restart Jenkins
-                    systemctl restart jenkins
+                    # systemctl restart jenkins
             ImageId: !Ref ServerAMIId
             SecurityGroups:
                 - Ref: JenkinsServerSecurityGroup
