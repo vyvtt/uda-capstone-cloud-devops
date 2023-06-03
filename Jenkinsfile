@@ -12,7 +12,7 @@ pipeline {
 			steps {
 				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'docker_account', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD']]){
 					sh '''
-						docker build -t thuyvyv2tv/udacity-capstone-pj:latest .
+						docker build -t thuyvyv2tv/udacity-capstone-cloud:latest .
 					'''
 				}
 			}
@@ -23,7 +23,7 @@ pipeline {
 				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'docker_account', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD']]){
 					sh '''
 						docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-						docker push thuyvyv2tv/udacity-capstone-pj:latest
+						docker push thuyvyv2tv/udacity-capstone-cloud:latest
 					'''
 				}
 			}
